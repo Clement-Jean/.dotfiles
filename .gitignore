@@ -5,3 +5,4 @@ system/hardware.nix
 .emacs.d/transient
 .emacs.d/auto-save-list
 .emacs.d/ido.last
+.emacs.d/url
