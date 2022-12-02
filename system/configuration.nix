@@ -20,6 +20,10 @@
     useXkbConfig = true;
   };
 
+  nix.settings.substituters = [
+    "https://mirrors.tuna.tsinghua.edu.cn/nix-channels/store"
+  ];
+
   services.xserver = {
     enable = true;
     windowManager.exwm = {
@@ -46,6 +50,11 @@
       ];
     };
     libinput.enable = true;
+  };
+
+  programs.gnupg.agent = {
+    enable = true;
+    enableSSHSupport = true;
   };
 
   sound.enable = true;
