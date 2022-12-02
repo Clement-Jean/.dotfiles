@@ -11,12 +11,12 @@
   users.users.my_user = {
     isNormalUser = true;
     extraGroups = [
-	  "wheel" # sudo
-	  # other groups (eg: docker)
-	];
+      "wheel" # sudo
+      # other groups (eg: docker)
+    ];
     packages = with pkgs; [
-	  # user packages
-	];
+      # user packages
+    ];
   };
 }
 ```
@@ -28,7 +28,7 @@
     hostName = "...";
     defaultGateway = "...";
     nameservers = [ "8.8.8.8" "8.8.4.4" ];
-	# etc...
+    # etc...
   };
 }
 ```
