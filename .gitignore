@@ -1,3 +1,7 @@
 system/networking.nix
 system/users.nix
 system/hardware.nix
+.emacs.d/elpa
+.emacs.d/transient
+.emacs.d/auto-save-list
+.emacs.d/ido.last
