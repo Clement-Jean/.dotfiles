@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: service_type
+# key: svc
+# contributor: Clément Jean <clement.jean@epitech.eu>
+# --
+service ${1:Name} {
+  $0
+}

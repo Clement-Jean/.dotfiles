@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: multiline_comment
+# key: com
+# contributor: Clément Jean <clement.jean@epitech.eu>
+# --
+/* ${1:your comment} */

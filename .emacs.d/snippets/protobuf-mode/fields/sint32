@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: sint32_field
+# key: fs32
+# condition: (or (protobuf-in-class "message") (protobuf-in-class "oneof"))
+# contributor: Clément Jean <clement.jean@epitech.eu>
+# --
+sint32 ${1:name} = ${2:1};

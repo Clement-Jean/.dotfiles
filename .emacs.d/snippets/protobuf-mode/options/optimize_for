@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: optimize_for_opt
+# key: o4
+# condition: (protobuf-at-file-level)
+# contributor: Clément Jean <clement.jean@epitech.eu>
+# --
+option optimize_for = ${1:$$(yas-auto-next (yas-choose-value '("SPEED" "CODE_SIZE" "LITE_RUNTIME")))};
+$0

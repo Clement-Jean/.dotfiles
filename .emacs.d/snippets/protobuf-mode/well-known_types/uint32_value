@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: uint32_value_wkt
+# key: wwu32
+# contributor: Clément Jean <clement.jean@epitech.eu>
+# --
+google.protobuf.UInt32Value

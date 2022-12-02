@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: cc_enable_arenas_opt
+# key: ocea
+# condition: (protobuf-at-file-level)
+# contributor: Clément Jean <clement.jean@epitech.eu>
+# --
+option cc_enable_arenas = true;
+$0

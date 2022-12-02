@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: struct_import
+# key: imps
+# condition: (protobuf-at-file-level)
+# contributor: Clément Jean <clement.jean@epitech.eu>
+# --
+import "google/protobuf/struct.proto";

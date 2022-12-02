@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: repeated
+# key: rep
+# condition: (or (protobuf-in-class "message") (protobuf-in-class "oneof"))
+# contributor: Clément Jean <clement.jean@epitech.eu>
+# --
+repeated

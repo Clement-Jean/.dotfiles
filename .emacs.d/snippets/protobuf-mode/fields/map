@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: map_field
+# key: fma
+# condition: (and (or (protobuf-in-class "message") (protobuf-in-class "oneof")) (protobuf-not-repeated))
+# contributor: Clément Jean <clement.jean@epitech.eu>
+# --
+map<${1:KeyType}, ${2:ValueType}> ${3:name} = ${4:1};

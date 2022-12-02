@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: deprecated_opt
+# key: odep
+# contributor: Clément Jean <clement.jean@epitech.eu>
+# --
+`(protobuf-conditional-expand)`

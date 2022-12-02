@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: field_mask_import
+# key: impf
+# condition: (protobuf-at-file-level)
+# contributor: Clément Jean <clement.jean@epitech.eu>
+# --
+import "google/protobuf/field_mask.proto";

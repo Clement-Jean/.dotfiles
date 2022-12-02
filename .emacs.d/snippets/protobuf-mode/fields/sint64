@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: sint64_field
+# key: fs64
+# condition: (or (protobuf-in-class "message") (protobuf-in-class "oneof"))
+# contributor: Clément Jean <clement.jean@epitech.eu>
+# --
+sint64 ${1:name} = ${2:1};

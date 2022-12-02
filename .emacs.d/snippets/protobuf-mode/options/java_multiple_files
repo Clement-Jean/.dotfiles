@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: java_multiple_files_opt
+# key: ojmf
+# condition: (protobuf-at-file-level)
+# contributor: Clément Jean <clement.jean@epitech.eu>
+# --
+option java_multiple_files = true;
+$0

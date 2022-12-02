@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: oneof_field
+# key: foo
+# condition: (and (or (protobuf-in-class "message") (protobuf-in-class "oneof")) (protobuf-not-repeated))
+# contributor: Clément Jean <clement.jean@epitech.eu>
+# --
+oneof ${1:name} {
+  $0
+}

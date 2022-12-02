@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: java_package_opt
+# key: ojp
+# condition: (protobuf-at-file-level)
+# contributor: Clément Jean <clement.jean@epitech.eu>
+# --
+option java_package = "${1:package.name}";
+$0

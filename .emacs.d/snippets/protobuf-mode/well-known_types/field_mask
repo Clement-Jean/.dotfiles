@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: field_mask_wkt
+# key: wf
+# contributor: Clément Jean <clement.jean@epitech.eu>
+# --
+google.protobuf.FieldMask

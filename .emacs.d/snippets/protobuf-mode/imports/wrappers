@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: wrappers_import
+# key: impw
+# condition: (protobuf-at-file-level)
+# contributor: Clément Jean <clement.jean@epitech.eu>
+# --
+import "google/protobuf/wrappers.proto";

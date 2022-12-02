@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: sfixed32_field
+# key: fsf32
+# condition: (or (protobuf-in-class "message") (protobuf-in-class "oneof"))
+# contributor: Clément Jean <clement.jean@epitech.eu>
+# --
+sfixed32 ${1:name} = ${2:1};

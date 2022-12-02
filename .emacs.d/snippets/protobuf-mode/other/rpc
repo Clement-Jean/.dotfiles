@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: rpc
+# key: rpc
+# condition: (protobuf-in-class "service")
+# contributor: Clément Jean <clement.jean@epitech.eu>
+# --
+rpc ${1:Name} (${2:$1Request}) returns (${3:$1Response});

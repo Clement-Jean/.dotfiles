@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: proto3_syntax
+# key: sp3
+# condition: (protobuf-at-file-level)
+# contributor: Clément Jean <clement.jean@epitech.eu>
+# --
+syntax = "proto3";
