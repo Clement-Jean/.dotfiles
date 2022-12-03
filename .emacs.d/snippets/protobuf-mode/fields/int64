@@ -1,7 +1,0 @@
-# -*- mode: snippet -*-
-# name: int64_field
-# key: fi64
-# condition: (or (protobuf-in-class "message") (protobuf-in-class "oneof"))
-# contributor: Clément Jean <clement.jean@epitech.eu>
-# --
-int64 ${1:name} = ${2:1};

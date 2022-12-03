@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-# name: bytes_value_wkt
-# key: wwb
-# contributor: Clément Jean <clement.jean@epitech.eu>
-# --
-google.protobuf.BytesValue

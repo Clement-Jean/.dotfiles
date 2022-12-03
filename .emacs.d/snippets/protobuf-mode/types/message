@@ -1,8 +1,0 @@
-# -*- mode: snippet -*-
-# name: message_type
-# key: msg
-# contributor: Clément Jean <clement.jean@epitech.eu>
-# --
-message ${1:Name} {
-  $0
-}

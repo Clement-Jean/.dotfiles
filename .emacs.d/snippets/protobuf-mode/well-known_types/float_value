@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-# name: float_value_wkt
-# key: wwf
-# contributor: Clément Jean <clement.jean@epitech.eu>
-# --
-google.protobuf.FloatValue

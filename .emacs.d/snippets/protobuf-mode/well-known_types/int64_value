@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-# name: int64_value_wkt
-# key: wwi64
-# contributor: Clément Jean <clement.jean@epitech.eu>
-# --
-google.protobuf.Int64Value

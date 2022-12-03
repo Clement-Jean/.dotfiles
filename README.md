@@ -2,9 +2,13 @@
 
 ## Steps
 
-1) `ln -s ~/.dotfiles/.emacs ~/.emacs`
-2) `ln -s ~/.dotfiles/.emacs.d ~/.emacs.d`
-3) create `system/users.nix`:
+1) `git submodule init`
+2) `git submodule update`
+3) `ln -s ~/.dotfiles/.emacs ~/.emacs`
+4) `ln -s ~/.dotfiles/.emacs.d ~/.emacs.d`
+5) `ln -s ~/.dotfiles/.emacs.d/protobuf-snippets/protobuf-fn ~/.dotfiles/.emacs.d/lisp/protobuf-fn`
+6) `ln -s ~/.dotfiles/.emacs.d/protobuf-snippets/protobuf-mode ~/.dotfiles/.emacs.d/snippets/protobuf-mode`
+7) create `system/users.nix`:
 ```
 { pkgs, ... }:
 {
@@ -20,7 +24,7 @@
   };
 }
 ```
-4) create `system/networking.nix`:
+8) create `system/networking.nix`:
 ```
 { ... }:
 {
@@ -32,7 +36,7 @@
   };
 }
 ```
-5) copy /etc/nixos/hardware-configuration.nix to `system/hardware.nix`
-6) `./update-system.sh`
-7) `./apply-system.sh`
-8) `./purge-system.sh` (/!\ this will delete the old nixos generations)
+9) copy /etc/nixos/hardware-configuration.nix to `system/hardware.nix`
+10) `./update-system.sh`
+11) `./apply-system.sh`
+12) `./purge-system.sh` (/!\ this will delete the old nixos generations)

@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-# name: string_value_wkt
-# key: wws
-# contributor: Clément Jean <clement.jean@epitech.eu>
-# --
-google.protobuf.StringValue

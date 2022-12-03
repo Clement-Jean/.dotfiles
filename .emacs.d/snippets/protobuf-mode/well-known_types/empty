@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-# name: empty_wkt
-# key: we
-# contributor: Clément Jean <clement.jean@epitech.eu>
-# --
-google.protobuf.Empty

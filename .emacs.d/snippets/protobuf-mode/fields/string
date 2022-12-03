@@ -1,7 +1,0 @@
-# -*- mode: snippet -*-
-# name: string_field
-# key: fst
-# condition: (or (protobuf-in-class "message") (protobuf-in-class "oneof"))
-# contributor: Clément Jean <clement.jean@epitech.eu>
-# --
-string ${1:name} = ${2:1};

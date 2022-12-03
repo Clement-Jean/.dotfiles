@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-# name: timestamp_wkt
-# key: wt
-# contributor: Clément Jean <clement.jean@epitech.eu>
-# --
-google.protobuf.Timestamp

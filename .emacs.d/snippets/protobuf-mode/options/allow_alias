@@ -1,7 +1,0 @@
-# -*- mode: snippet -*-
-# name: allow_alias_opt
-# key: oaa
-# condition: (protobuf-in-class "enum")
-# contributor: Clément Jean <clement.jean@epitech.eu>
-# --
-option allow_alias = true;

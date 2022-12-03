@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-# name: duration_wkt
-# key: wd
-# contributor: Clément Jean <clement.jean@epitech.eu>
-# --
-google.protobuf.Duration

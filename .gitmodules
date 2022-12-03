@@ -1,0 +1,3 @@
+[submodule ".emacs.d/protobuf-snippets"]
+	path = .emacs.d/protobuf-snippets
+	url = git@github.com:Clement-Jean/protobuf-snippets.git

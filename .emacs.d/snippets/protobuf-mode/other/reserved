@@ -1,7 +1,0 @@
-# -*- mode: snippet -*-
-# name: reserved
-# key: res
-# condition: (or (protobuf-in-class "message") (protobuf-in-class "enum"))
-# contributor: Clément Jean <clement.jean@epitech.eu>
-# --
-reserved ${1:1};

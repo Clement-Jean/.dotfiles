@@ -1,7 +1,0 @@
-# -*- mode: snippet -*-
-# name: duration_import
-# key: impd
-# condition: (protobuf-at-file-level)
-# contributor: Clément Jean <clement.jean@epitech.eu>
-# --
-import "google/protobuf/duration.proto";
