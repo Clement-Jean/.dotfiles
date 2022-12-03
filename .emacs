@@ -86,7 +86,7 @@
 		       (lambda()
 			 (add-hook 'before-save-hook #'bazel-mode-buildifier nil t))))
 
-(mapc 'load (file-expand-wildcards "~/.emacs.d/proto/*.el"))
+(mapc 'load (file-expand-wildcards "~/.emacs.d/lisp/protobuf-fn/*.el"))
 (defconst protobuf-ident-style
   '((c-basic-offset . 2)
     (indent-tabs-mode . nil)))

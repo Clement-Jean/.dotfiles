@@ -6,3 +6,5 @@ system/hardware.nix
 .emacs.d/auto-save-list
 .emacs.d/ido.last
 .emacs.d/url
+.emacs.d/lisp/protobuf-fn
+.emacs.d/snippets/protobuf-mode
