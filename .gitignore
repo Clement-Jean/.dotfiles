@@ -11,4 +11,5 @@ system/hardware.nix
 .emacs.d/snippets/protobuf-mode
 .emacs.d/.lsp-session-v1
 .emacs.d/eln-cache/
-.emacs.d/eshell/
+.emacs.d/eshell/history
+.emacs.d/eshell/lastdir
