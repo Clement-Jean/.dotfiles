@@ -2,11 +2,17 @@
 (require 'package)
 (require 'org-tempo)
 
+; Env
+(setq exec-path (append exec-path
+			'("/root/go/bin"
+			  "/root/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/bin")))
+
 ; Meta
 (set-face-attribute 'default nil :font "Monospace" :height 250)
 
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
 (load-file (expand-file-name "lisp/window.el" user-emacs-directory))
+(load-file (expand-file-name "lisp/eshell.el" user-emacs-directory))
 
 (setq package-archives '(("melpa" . "https://melpa.org/packages/")
 			 ("org" . "https://orgmode.org/elpa/")
@@ -30,6 +36,9 @@
 
 (load-theme 'tango-dark)
 
+(setq eshell-prompt-function #'my-eshell-prompt
+      eshell-prompt-regexp ".*λ+ ")
+
 ; Modes
 (menu-bar-mode -1)
 (display-battery-mode 1)
@@ -39,11 +48,26 @@
 
 ; Hooks
 (add-hook 'emacs-startup-hook #'my-default-window-setup)
+(add-hook 'emacs-lisp-mode-hook
+	  '(lambda()
+	     (setq prettify-symbols-alist
+		   (mapcan (lambda(x) (list x (cons (upcase (car x)) (cdr x))))
+			   '(("lambda" . 955)
+ 			     ("map" . 8614))))
+	     (prettify-symbols-mode 1)))
 
-(add-hook 'shell-mode-hook
-	  (lambda()
-	    (define-key shell-mode-map "\C-l"
-	      'comint-clear-buffer)))
+(add-hook 'org-mode-hook
+	  '(lambda()
+	     (setq prettify-symbols-alist
+		   (mapcan (lambda(x) (list x (cons (upcase (car x)) (cdr x))))
+			   '(("DONE" . ?✔)
+			     ("TODO" . ?✘)
+			     ("[100%]" . ?💯))))
+	     (prettify-symbols-mode 1)))
+
+(add-hook 'eshell-mode-hook
+	  '(lambda()
+	     (local-set-key (kbd "C-l") 'eshell-clear-buffer)))
 
 (add-hook 'compilation-finish-functions 'bury-compile-buffer-if-successful)
 
@@ -58,7 +82,7 @@
 			    (setq whitespace-line 'lines-face)
 			    (whitespace-mode 1)))
 
-(dolist (mode '(shell-mode-hook ielm-mode-hook))
+(dolist (mode '(eshell-mode-hook ielm-mode-hook))
   (add-hook mode (lambda() (display-line-numbers-mode 0))))
 
 ; Packages
