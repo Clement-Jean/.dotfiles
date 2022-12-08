@@ -6,8 +6,8 @@
       git
       git-crypt
       gnupg
+      tree
       emacs
-      wget
       bazel_5
       kubectl
       go_1_19

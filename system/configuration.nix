@@ -7,7 +7,7 @@
     ./users.nix
   ];
 
-  system.stateVersion = "22.05";
+  system.stateVersion = "22.11";
   boot.loader = {
     systemd-boot.enable = true;
     efi.canTouchEfiVariables = true;
