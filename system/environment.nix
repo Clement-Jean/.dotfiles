@@ -11,7 +11,8 @@
       bazel_5
       kubectl
       go_1_19
-      rustup
+      cargo
+      rustc
     ];
     interactiveShellInit = ''
       alias ..='cd ..'
