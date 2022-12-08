@@ -13,6 +13,7 @@
       go_1_19
       cargo
       rustc
+      rustfmt
     ];
     interactiveShellInit = ''
       alias ..='cd ..'
