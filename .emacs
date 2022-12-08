@@ -12,7 +12,8 @@
 
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
 (load-file (expand-file-name "lisp/window.el" user-emacs-directory))
-(load-file (expand-file-name "lisp/eshell.el" user-emacs-directory))
+(load-file (expand-file-name "lisp/git.el" user-emacs-directory))
+(load-file (expand-file-name "lisp/sh.el" user-emacs-directory))
 
 (setq package-archives '(("melpa" . "https://melpa.org/packages/")
 			 ("org" . "https://orgmode.org/elpa/")
