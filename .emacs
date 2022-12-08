@@ -73,8 +73,8 @@
 
 (add-hook 'prog-mode-hook (lambda()
 			    (whitespace-mode 0)
-			    (setq-default show-trailing-whitespace t)
-			    (setq whitespace-line-column 80
+			    (setq show-trailing-whitespace t
+				  whitespace-line-column 80
 				  whitespace-style '(face lines)
 				  tab-face (make-face 'lines-face))
 			    (set-face-foreground 'lines-face "white")
