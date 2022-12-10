@@ -44,9 +44,6 @@
         epkgs.rust-mode
         epkgs.protobuf-mode
         epkgs.dockerfile-mode
-
-        # Misc
-        epkgs.all-the-icons
       ];
     };
     libinput.enable = true;
