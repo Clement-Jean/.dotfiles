@@ -83,6 +83,14 @@
 			    (setq whitespace-line 'lines-face)
 			    (whitespace-mode 1)))
 
+(add-hook 'rust-mode-hook
+	  '(lambda()
+	     (setq prettify-symbols-alist
+		   (mapcan (lambda(x) (list x (cons (upcase (car x)) (cdr x))))
+			   '(("=>" . 8658)
+			     ("->" . 8594))))
+	     (prettify-symbols-mode 1)))
+
 (dolist (mode '(eshell-mode-hook ielm-mode-hook))
   (add-hook mode (lambda() (display-line-numbers-mode 0))))
 
